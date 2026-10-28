@@ -24,6 +24,8 @@
 
 Этот репозиторий содержит материалы, конспекты, бенчмарки и исходный код пет-проектов для целенаправленного перехода на уровень **Middle Go Backend Developer**.
 
+Видео-урок от nilchanpub [GOLANG ПОЛНЫЙ КУРС ДЛЯ НАЧИНАЮЩИХ | ЧАСТЬ 1 | ОСНОВЫ ПРОГРАММИРОВАНИЯ](https://www.youtube.com/watch?v=dpvRDJjUJf8).
+
 В отличие от типовых обучающих туториалов уровня "Hello World" или простых CRUD-приложений, фокус сделан на:
 - **Низкоуровневых механиках Go:** Escape Analysis, внутренности сборщика мусора (Tricolor Mark & Sweep), планировщик GMP, управление памятью и профилирование (`pprof`).
 - **Сложной работе с хранилищами:** Блокировки в PostgreSQL (`SELECT FOR UPDATE`), уровни изоляции, предотвращение Deadlock'ов, тюнинг `pgxpool`, структуры данных Redis (SkipList в ZSET) и Redlock.
@@ -147,14 +149,8 @@ GoLearning/
 ├── ROADMAP.md              # Подробная 6-этапная программа развития
 ├── VERIFICATION.md         # Чеклист теории и критериев готовности проектов
 │
-├── docs/                   # Архитектурные заметки, схемы, конспекты
-│   ├── runtime/            # Конспекты: память, GMP, GC
-│   └── database/           # Оптимизация SQL, блокировки, транзакции
-│
-├── theory/                 # Код-примеры и микробенчмарки
-│   ├── 01-memory-gc/       # Примеры Escape Analysis, padding структур
-│   ├── 02-concurrency/     # Worker Pools, Pipelines, Context, sync.Pool
-│   └── 03-postgres-pgx/    # Блокировки, pgxpool, транзакции
+├── theory/                 # Код-примеры и теория по видео-курсу nilchanpub - папка = тайм-код
+│   ├── ...
 │
 └── projects/               # Исходный код ключевых пет-проектов
     ├── booking-auction/    # High-Load Booking & Auction Engine
