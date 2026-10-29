@@ -6,7 +6,7 @@ func main() {
 	// defer - это отложенная функция, как в <script defer> в html
 	defer func() {
 		fmt.Println("Defer func")
-	}() // -> () в конце это моментальный вызов фунцкии
+	}() // -> () в конце это моментальный вызов функции
 
 	fmt.Println("Hello1")
 	fmt.Println("Hello2")
